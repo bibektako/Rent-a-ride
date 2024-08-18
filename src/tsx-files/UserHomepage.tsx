@@ -197,7 +197,7 @@ function UserHomepage() {
 
                 <div className="user-header">
                     <div className="user-homepage-title-container">
-                        <Link to="/homepage"><img id = "user-homepage-icon" src = "/YatraTech.png" alt="YatraTech Icon"/></Link>
+                        <Link to="/homepage"><img id = "user-homepage-icon" src = "/RentMyRide.png" alt="YatraTech Icon"/></Link>
                         <Link to="/homepage"><h2 id = "user-homepage-title"><span className="user-yatra">Yatra</span><span className="user-tech">Tech</span></h2></Link>
                     </div>
                     <div className="user-homepage-profile-icon-container">
@@ -245,73 +245,82 @@ function UserHomepage() {
                 )}
 
                 <div className="user-homepage-content">
-                    <div className = "user-homepage-welcome-container" style = {{backgroundImage: `url('src/assets/UserHomepage/Homepage.png')` }}></div>
+                    <div className="user-homepage-welcome-container"
+                         style={{backgroundImage: `url('src/assets/UserHomepage/Homepage.png')`}}></div>
 
                     <div className="user-homepage-welcome-note">
-                        <h1 style = {{fontSize: "5vw" }}>Welcome to YatraTech!</h1>
-                        <p>Welcome to YatraTech, a budding startup focused on delivering unparalleled service quality. While our fleet may be small in quantity, our dedication to excellence is unwavering. We invite you to experience our services and join us in our journey to elevate both our online presence and physical reach. Your support and feedback are invaluable to us as we strive to enhance our offerings. Please note that as a startup, we currently do not have an advanced payment system on our website. You can settle payments conveniently through cash or mobile banking when picking up your chosen vehicle. Thank you for choosing YatraTech!</p>
+                        <h1 style={{fontSize: "5vw"}}>Welcome to RentMyRide!</h1>
+                        <p>Welcome to RentMyRide, where exceptional service meets unmatched convenience. While our fleet
+                            may be growing, our commitment to providing top-notch experiences remains steadfast. We
+                            invite you to explore our offerings and be a part of our journey to enhance both our online
+                            platform and physical services. Your support and feedback are crucial as we work to improve
+                            and expand. Please note that currently, we do not offer an advanced payment system on our
+                            website. Payments can be made easily through cash or mobile banking when you collect your
+                            vehicle. Thank you for choosing RentMyRide!</p>
                     </div>
 
-                    <div className= "user-homepage-title">
-                        <h1 style = {{fontSize: "5vw" }}> Our Vehicles </h1>
+                    <div className="user-homepage-title">
+                        <h1 style={{fontSize: "5vw"}}>  Vehicles for Rent </h1>
                     </div>
 
                     <div className="user-homepage-search-bars">
-                            <div className="user-homepage-name-search">
-                                <p>Search by Name: </p>
-                                <input
-                                    className="user-homepage-name-searchbar"
-                                    value={nameQuery}
-                                    onChange={(e) => setNameQuery(e.target.value)}
-                                />
-                            </div>
-                            <div className="user-homepage-type-search">
-                                <p>Search by Type: </p>
-                                <input
-                                    className="user-homepage-type-searchbar"
-                                    value={typeQuery}
-                                    onChange={(e) => setTypeQuery(e.target.value)}
-                                />
-                            </div>
+                        <div className="user-homepage-name-search">
+                            <p>Search by Name: </p>
+                            <input
+                                className="user-homepage-name-searchbar"
+                                value={nameQuery}
+                                onChange={(e) => setNameQuery(e.target.value)}
+                            />
+                        </div>
+                        <div className="user-homepage-type-search">
+                            <p>Search by Type: </p>
+                            <input
+                                className="user-homepage-type-searchbar"
+                                value={typeQuery}
+                                onChange={(e) => setTypeQuery(e.target.value)}
+                            />
+                        </div>
                     </div>
 
-                    <div className= "user-homepage-vehicle-list">
+                    <div className="user-homepage-vehicle-list">
                         {filteredVehicles.map((vehicle) => (
                             <div key={vehicle.vehicleId} className="user-homepage-vehicle-card">
-                                    <div className="user-homepage-card-image-view">
-                                        {vehicle.vehicleImage && (
-                                            <img
-                                                src={`http://localhost:8080/api/vehicle/image/${vehicle.vehicleImage}`}
-                                                alt={vehicle.vehicleName}
-                                                id="user-homepage-card-image"/>
-                                        )}
+                                <div className="user-homepage-card-image-view">
+                                    {vehicle.vehicleImage && (
+                                        <img
+                                            src={`http://localhost:8080/api/vehicle/image/${vehicle.vehicleImage}`}
+                                            alt={vehicle.vehicleName}
+                                            id="user-homepage-card-image"/>
+                                    )}
+                                </div>
+
+                                <div className="user-homepage-divider">
+                                    <div className="user-homepage-vehicle-card-content">
+                                        <h3>{vehicle.vehicleName}</h3>
+                                        <p>
+                                            <strong>Type: </strong>
+                                            {vehicle.vehicleType}
+                                        </p>
+                                        <p>
+                                            <strong>Number: </strong>
+                                            {vehicle.vehicleNumber}
+                                        </p>
+                                        <p>
+                                            <strong>Seats: </strong>
+                                            {vehicle.numberOfSeats}
+                                        </p>
+                                        <p>
+                                            <strong>Price per hour: </strong>
+                                            {vehicle.pricePerHour}
+                                        </p>
                                     </div>
 
-                                    <div className="user-homepage-divider">
-                                        <div className= "user-homepage-vehicle-card-content">
-                                            <h3>{vehicle.vehicleName}</h3>
-                                            <p>
-                                                <strong>Type: </strong>
-                                                {vehicle.vehicleType}
-                                            </p>
-                                            <p>
-                                                <strong>Number: </strong>
-                                                {vehicle.vehicleNumber}
-                                            </p>
-                                            <p>
-                                                <strong>Seats: </strong>
-                                                {vehicle.numberOfSeats}
-                                            </p>
-                                            <p>
-                                                <strong>Price per hour: </strong>
-                                                {vehicle.pricePerHour}
-                                            </p>
-                                        </div>
-
-                                        <div className= "user-homepage-order-button">
-                                            <button className="user-homepage-order-btn" onClick={() => handleOrderClick(vehicle)}>Place your order</button>
-                                        </div>
+                                    <div className="user-homepage-order-button">
+                                        <button className="user-homepage-order-btn"
+                                                onClick={() => handleOrderClick(vehicle)}>Place your order
+                                        </button>
                                     </div>
+                                </div>
                             </div>
                         ))}
                     </div>

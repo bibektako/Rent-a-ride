@@ -1,4 +1,4 @@
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -8,14 +8,14 @@ body{
     left: 0;
     height: 100px;
     width: 100vw;
-    background-color: #6c757d; /* Changed background color to a neutral gray */
+    background-color: #6c757d; /* Neutral gray */
     z-index: 99;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.user-homepage-title-container{
+.user-homepage-title-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,18 +37,19 @@ body{
     width: 120px;
     font-size: 35px;
 }
+
 .user-yatra {
-    background-image: linear-gradient(90deg, #495057 20%, #adb5bd 40%, #ced4da 60%, #495057 80%, #343a40 95%);
+    background-image: linear-gradient(90deg, #ff6600 20%, #adb5bd 40%, #f8f9fa 60%, #ff6600 80%, #343a40 95%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 .user-tech {
-    color: #495057; /* Updated to a soft, modern gray */
+    color: #ff6600; /* Bright orange */
 }
 
-.user-homepage-profile-icon-container{
+.user-homepage-profile-icon-container {
     z-index: 999;
     padding: 30px 20px 10px 20px;
     display: flex;
@@ -56,28 +57,28 @@ body{
     align-items: center;
 }
 
-.user-header-profile-icon{
-    color: #343a40; /* Dark gray for profile icon */
+.user-header-profile-icon {
+    color: #343a40; /* Dark gray */
     height: 40px;
 }
 
-.user-homepage-content{
+.user-homepage-content {
     position: absolute;
     top: 0;
     width: 100vw;
     padding-top: 100px;
-    background-color: #f8f9fa; /* Light background for content */
+    background-color: #f8f9fa; /* Light gray background */
 }
 
-.user-homepage-logout-button{
+.user-homepage-logout-button {
     padding: 0;
     background-color: transparent;
     border-color: transparent;
     outline: transparent;
-    color: #343a40; /* Dark gray for logout button */
+    color: #343a40; /* Dark gray */
 }
 
-.user-homepage-logout-button:hover{
+.user-homepage-logout-button:hover {
     border-color: transparent;
 }
 
@@ -85,26 +86,26 @@ body{
     background-size: cover;
     min-height: 85vh;
     position: relative;
-    background-color: #e9ecef; /* Light background */
+    background-color: #e9ecef; /* Lighter background */
 }
 
-.user-homepage-welcome-note{
+.user-homepage-welcome-note {
     background-color: white;
     padding-top: 30px;
     text-align: center;
 }
 
-.user-homepage-welcome-note p{
+.user-homepage-welcome-note p {
     padding: 2.5vw;
 }
 
-.user-homepage-title{
+.user-homepage-title {
     background-color: white;
     padding: 0;
     text-align: center;
 }
 
-.user-homepage-search-bars{
+.user-homepage-search-bars {
     background-color: white;
     margin-top: 10px;
     display: flex;
@@ -113,26 +114,26 @@ body{
     padding: 20px 20px 30px 20px;
 }
 
-.user-homepage-name-search, .user-homepage-type-search{
+.user-homepage-name-search, .user-homepage-type-search {
     display: flex;
     padding-top: 10px;
     gap: 10px;
 }
 
-.user-homepage-name-searchbar, .user-homepage-type-searchbar{
+.user-homepage-name-searchbar, .user-homepage-type-searchbar {
     height: 30px;
     width: 200px;
-    border-color: #adb5bd; /* Softer gray for borders */
+    border-color: #adb5bd; /* Softer gray */
     background-color: white;
     border-radius: 10px;
     color: black;
 }
 
-.user-homepage-name-searchbtn, .user-homepage-type-searchbtn{
+.user-homepage-name-searchbtn, .user-homepage-type-searchbtn {
     height: 30px;
     width: 80px;
     padding: 3px;
-    background-color: #343a40; /* Dark gray buttons */
+    background-color: #ff6600; /* Orange buttons */
     color: white;
     border: none;
     border-radius: 5px;
@@ -146,18 +147,18 @@ body{
     gap: 10px;
 }
 
-.user-homepage-vehicle-card{
+.user-homepage-vehicle-card {
     height: 50vw;
     width: 45vw;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border: 3px solid #495057; /* Soft gray border */
+    border: 3px solid #495057; /* Soft gray */
     border-radius: 30px;
-    background-color: #f8f9fa; /* Light card background */
+    background-color: #f8f9fa; /* Light gray background */
 }
 
-.user-homepage-card-image-view{
+.user-homepage-card-image-view {
     margin: 0 1vw 0 0;
     height: 27vw;
     width: 41vw;
@@ -165,27 +166,27 @@ body{
     overflow: hidden;
 }
 
-#user-homepage-card-image{
+#user-homepage-card-image {
     height: 27vw;
     width: 41vw;
 }
 
-.user-homepage-vehicle-card-content{
+.user-homepage-vehicle-card-content {
     padding-top: 20px;
 }
 
-.user-homepage-vehicle-card-content h3{
+.user-homepage-vehicle-card-content h3 {
     text-decoration: underline;
     padding-bottom: 10px;
 }
 
-.user-homepage-order-button{
+.user-homepage-order-button {
     display: flex;
     justify-content: flex-end;
 }
 
-.user-homepage-footer{
-    background-color: #343a40;
+.user-homepage-footer {
+    background-color: #343a40; /* Dark gray */
     padding: 7px;
     color: white;
 }
@@ -196,7 +197,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    background-color: #495057; /* Dark background for the form */
+    background-color: #495057; /* Dark gray */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -204,14 +205,14 @@ body{
     width: 70vw;
 }
 
-.user-order-form-title{
+.user-order-form-title {
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.user-order-form-detail{
+.user-order-form-detail {
     padding-top: 1.5vw;
     padding-left: 1vw;
     color: white;
@@ -222,8 +223,7 @@ body{
 #pickup-location-label,
 #pickup-time-label,
 #dropoff-location-label,
-#dropoff-time-label
-{
+#dropoff-time-label {
     color: white;
     font-size: 2.5vw;
 }
@@ -233,13 +233,13 @@ body{
 #pickup-time,
 #dropoff-location,
 #dropoff-time {
-    background-color: rgba(108, 117, 125, 0.91); /* Lighter form input background */
+    background-color: rgba(108, 117, 125, 0.91); /* Lighter form background */
     border: none;
     border-radius: 10px;
     padding: 10px;
 }
 
-.user-order-form-submit{
+.user-order-form-submit {
     padding-top: 30px;
     display: flex;
     justify-content: flex-end;

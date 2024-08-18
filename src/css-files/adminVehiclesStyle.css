@@ -1,4 +1,4 @@
-.admin-vehicle-everything{
+.admin-vehicle-everything {
     position: absolute;
     top: 0;
     left: 0;
@@ -6,32 +6,33 @@
     width: 100vw;
     overflow-x: hidden;
 }
+
 .admin-vehicles-content {
     position: absolute;
     top: 100px;
     width: 100vw;
-    background-color: white;
+    background-color: #fff; /* White background */
     padding-left: 120px;
 }
 
-.admin-vehicle-header-container{
+.admin-vehicle-header-container {
     display: flex;
     flex-direction: row;
 }
 
-.admin-vehicle-header{
+.admin-vehicle-header {
     flex: 7;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#admin-vehicle-header{
+#admin-vehicle-header {
     font-size: 30px;
     padding: 20px;
 }
 
-.admin-vehicle-add-button{
+.admin-vehicle-add-button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,14 +43,14 @@
 .admin-vehicle-addButton {
     width: 7vw;
     position: absolute;
-    color: white;
-    padding: 0 5px 0 5px;
+    color: #fff; /* White text */
+    padding: 0 5px;
     font-size: 30px;
-    background-color: rgb(25, 51, 82);
+    background-color: #ff6600; /* Orange background */
     border-radius: 6px;
 }
 
-.admin-vehicle-search-bars{
+.admin-vehicle-search-bars {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -58,48 +59,34 @@
     justify-content: space-evenly;
 }
 
-
-.admin-vehicle-name-search, .admin-vehicle-number-search{
+.admin-vehicle-name-search, .admin-vehicle-number-search {
     display: flex;
     padding-top: 10px;
     gap: 10px;
 }
 
-.admin-vehicle-name-searchbar, .admin-vehicle-number-searchbar{
+.admin-vehicle-name-searchbar, .admin-vehicle-number-searchbar {
     height: 30px;
     width: 200px;
-    border-color: grey;
-    background-color: white;
+    border-color: #ccc; /* Gray border */
+    background-color: #fff; /* White background */
     border-radius: 10px;
 }
 
-.admin-vehicle-name-searchbtn, .admin-vehicle-number-searchbtn{
+.admin-vehicle-name-searchbtn, .admin-vehicle-number-searchbtn {
     height: 30px;
     width: 80px;
     padding: 3px;
 }
 
-.admin-vehicle-save-form{
-    margin: -30px 3vw 10vw 10vw;
-}
-
 .admin-vehicle-save-form {
     width: 500px;
     position: absolute;
-    background-color: rgb(25, 51, 82);
+    background-color: #ff6600; /* Orange background */
     border-radius: 20px;
     z-index: 9999;
     right: 10px;
-}
-
-.admin-vehicle-image-upload{
-    flex: 40%;
-}
-
-.admin-vehicle-content-upload{
-    height: 360px;
-    flex: 60%;
-    padding-top: 30px;
+    color: #fff; /* White text */
 }
 
 .admin-vehicle-image-upload {
@@ -108,17 +95,23 @@
     flex-direction: column;
 }
 
-.admin-vehicle-image-select{
+.admin-vehicle-content-upload {
+    height: 360px;
+    flex: 60%;
+    padding-top: 30px;
+}
+
+.admin-vehicle-image-select {
     display: flex;
     justify-content: flex-end;
 }
 
-#admin-vehicle-form-img{
+#admin-vehicle-form-img {
     height: 100%;
     padding: 5% 20% 0 20%;
 }
 
-.img-vehicle-browse-button{
+.img-vehicle-browse-button {
     width: 160px;
     height: 40px;
     border-radius: 8px;
@@ -129,14 +122,13 @@
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #f1f1f1;
-    color: rgb(25, 51, 82);
+    background-color: #f1f1f1; /* Light Gray background */
+    color: #ff6600; /* Orange text */
     cursor: pointer;
     transition: border-color 0.25s;
 }
 
-
-.admin-vehicle-name {
+.admin-vehicle-name, .admin-vehicle-type, .admin-vehicle-number {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,53 +136,27 @@
     margin-bottom: 10px;
 }
 
-#admin-vehicle-name {
-    color: #89adbd;
-    font-family: "Nunito";
-}
-
-.admin-vehicle-type {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-#admin-vehicle-type {
-    color: #89adbd;
-    font-family: "Nunito";
-}
-
-.admin-vehicle-number {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-#admin-vehicle-number {
-    color: #89adbd;
+#admin-vehicle-name, #admin-vehicle-type, #admin-vehicle-number {
+    color: #ff6600; /* Orange text */
     font-family: "Nunito";
 }
 
 #vehicleName, #vehicleType, #vehicleNumber {
     width: 350px;
     height: 30px;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Light Gray background */
     font-family: "Barlow Condensed Medium";
-    color: #152039;
+    color: #152039; /* Dark Gray text */
 }
 
-.admin-seat-and-price{
+.admin-seat-and-price {
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
 }
 
-.admin-vehicle-seat {
+.admin-vehicle-seat, .admin-vehicle-price {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,33 +164,20 @@
     margin-bottom: 10px;
 }
 
-#admin-vehicle-seat {
-    color: #89adbd;
-    font-family: "Nunito";
-}
-
-.admin-vehicle-price {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-#admin-vehicle-price {
-    color: #89adbd;
+#admin-vehicle-seat, #admin-vehicle-price {
+    color: #ff6600; /* Orange text */
     font-family: "Nunito";
 }
 
 #numberOfSeats, #pricePerHour {
     width: 200px;
     height: 30px;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Light Gray background */
     font-family: "Barlow Condensed Medium";
-    color: #152039;
+    color: #152039; /* Dark Gray text */
 }
 
-.admin-vehicle-submit{
+.admin-vehicle-submit {
     display: flex;
     justify-content: space-evenly;
     padding-top: 10px;
@@ -232,19 +185,19 @@
 
 #admin-vehicle-submit {
     height: 40px;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px;
     border-radius: 8px;
     border: 1px solid transparent;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #f1f1f1;
-    color: rgb(25, 51, 82);
+    background-color: #f1f1f1; /* Light Gray background */
+    color: #ff6600; /* Orange text */
     cursor: pointer;
     transition: border-color 0.25s;
 }
 
-.admin-vehicle-list{
+.admin-vehicle-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 42px;
@@ -252,19 +205,20 @@
     margin: 20px;
     padding: 30px;
 }
-.vehicle-card{
+
+.vehicle-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.vehicle-card-wrapper{
+.vehicle-card-wrapper {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
 
-.admin-vehicle-card-buttons{
+.admin-vehicle-card-buttons {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -273,31 +227,31 @@
 .admin-vehicle-card-buttons p {
     margin: 2px 0;
     padding: 5px;
-    background-color: rgb(25, 51, 82);
-    color: white;
+    background-color: #ff6600; /* Orange background */
+    color: #fff; /* White text */
     border-radius: 6px;
 }
 
-.admin-vehicle-card-image-view{
+.admin-vehicle-card-image-view {
     height: 200px;
     width: 300px;
     overflow: hidden;
 }
 
-#admin-vehicle-card-image{
+#admin-vehicle-card-image {
     height: 200px;
     width: 300px;
     overflow: hidden;
 }
 
-@media screen and (max-width: 1350px){
-    .admin-vehicle-list{
+@media screen and (max-width: 1350px) {
+    .admin-vehicle-list {
         grid-template-columns: repeat(1, 1fr);
     }
-    .vehicle-card{
+    .vehicle-card {
         margin-right: 30vw;
     }
-    .admin-vehicle-search-bars{
+    .admin-vehicle-search-bars {
         margin-top: 0;
         height: 150px;
         display: flex;
@@ -308,7 +262,6 @@
     }
 }
 
-
 @media screen and (max-width: 1000px) {
     .admin-vehicle-save-form {
         display: flex;
@@ -316,45 +269,43 @@
         height: 600px;
     }
 
-    .admin-vehicle-image-upload{
+    .admin-vehicle-image-upload {
         height: 250px;
         flex: 42%;
     }
 
-    .admin-vehicle-content-upload{
+    .admin-vehicle-content-upload {
         height: 350px;
         padding-top: 30px;
     }
-
 }
 
 @media screen and (max-width: 720px) {
-    .admin-vehicle-list{
+    .admin-vehicle-list {
         margin-left: 0;
     }
-    .vehicle-card-content h3{
+    .vehicle-card-content h3 {
         font-size: 20px;
     }
-    .vehicle-card-content p{
+    .vehicle-card-content p {
         font-size: 15px;
     }
-    .admin-vehicle-card-image-view{
+    .admin-vehicle-card-image-view {
         height: 100px;
         width: 200px;
         overflow: hidden;
     }
-    #admin-vehicle-card-image{
+    #admin-vehicle-card-image {
         height: 100px;
         width: 150px;
         overflow: hidden;
     }
-    .admin-vehicle-card-buttons{
+    .admin-vehicle-card-buttons {
         margin-right: 50px;
     }
 }
 
 @media screen and (max-width: 670px) {
-
     .admin-vehicle-save-form {
         width: 350px;
     }
@@ -362,26 +313,26 @@
     #vehicleName, #vehicleType, #vehicleNumber {
         width: 200px;
         height: 30px;
-        background-color: #f1f1f1;
+        background-color: #f1f1f1; /* Light Gray background */
         font-family: "Barlow Condensed Medium";
-        color: #152039;
+        color: #152039; /* Dark Gray text */
     }
 
     #numberOfSeats, #pricePerHour {
         width: 100px;
         height: 30px;
-        background-color: #f1f1f1;
+        background-color: #f1f1f1; /* Light Gray background */
         font-family: "Barlow Condensed Medium";
-        color: #152039;
+        color: #152039; /* Dark Gray text */
     }
 
-    .admin-vehicle-search-bars{
+    .admin-vehicle-search-bars {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
 
-    .admin-vehicle-name-search, .admin-vehicle-number-search{
+    .admin-vehicle-name-search, .admin-vehicle-number-search {
         display: flex;
         flex-direction: column;
         padding-top: 10px;

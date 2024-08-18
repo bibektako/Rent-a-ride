@@ -1,31 +1,35 @@
-.user-profile-content{
+.user-profile-content {
     position: absolute;
     top: 0;
     width: 100vw;
     padding-top: 100px;
-    background-color: white;
+    background-color: #fff; /* White background */
 }
 
-.user-profile-your-details{
+.user-profile-your-details {
     padding-top: 10px;
     padding-left: 20px;
     font-size: 1.7vw;
+    color: #152039; /* Dark Gray text */
 }
 
-.user-profile-your-details h1{
+.user-profile-your-details h1 {
     font-family: Gabriola;
+    color: #ff6600; /* Orange text */
 }
 
-.user-profile-order-history{
+.user-profile-order-history {
     padding-left: 20px;
     font-size: 1.7vw;
+    color: #152039; /* Dark Gray text */
 }
 
-.user-profile-order-history-title h1{
+.user-profile-order-history-title h1 {
     font-family: Gabriola;
+    color: #ff6600; /* Orange text */
 }
 
-.user-profile-buttons{
+.user-profile-buttons {
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
@@ -35,9 +39,14 @@
 .user-profile-password, .edit-btn-submit {
     font-size: 1vw;
     padding: 1vw;
+    background-color: #f1f1f1; /* Light Gray background */
+    border: 1px solid #ccc; /* Gray border */
+    color: #152039; /* Dark Gray text */
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-.user-profile-edit{
+.user-profile-edit {
     height: 50px;
     padding: 10px;
 }
@@ -49,50 +58,59 @@
 .user-profile-edit-form label {
     display: block;
     margin-bottom: 10px;
+    color: #152039; /* Dark Gray text */
 }
 
-.form-control{
+.form-control {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 25vw;
     height: 2vw;
+    background-color: #f1f1f1; /* Light Gray background */
+    border: 1px solid #ccc; /* Gray border */
+    color: #152039; /* Dark Gray text */
+    border-radius: 6px;
 }
 
-.edit-form-title{
+.edit-form-title {
     font-size: 1vw;
+    color: #152039; /* Dark Gray text */
 }
 
-.user-profile-edit-form{
+.user-profile-edit-form {
     margin-right: 10px;
     height: 17vw;
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 6px;
 }
 
 @media screen and (max-width: 1100px) {
-    .user-profile-edit-form{
+    .user-profile-edit-form {
         height: 19vw;
     }
 }
 
 @media screen and (max-width: 840px) {
-    .user-profile-edit-form{
+    .user-profile-edit-form {
         height: 21vw;
     }
 }
 
 @media screen and (max-width: 680px) {
-    .user-profile-edit-form{
+    .user-profile-edit-form {
         height: 23vw;
     }
 }
 
 @media screen and (max-width: 590px) {
-    .user-profile-edit-form{
+    .user-profile-edit-form {
         height: 24.5vw;
     }
-    .user-profile-edit-form form{
+    .user-profile-edit-form form {
         padding: 10px;
     }
-    .edit-btn-submit{
+    .edit-btn-submit {
         margin-top: -13px;
     }
 }

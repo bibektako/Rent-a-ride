@@ -3,7 +3,7 @@
     top: 100px;
     width: 100vw;
     height: calc(100vh - 100px);
-    background-color: white;
+    background-color: #fff; /* White background */
 }
 
 .admin-header {
@@ -15,29 +15,34 @@
     left: 0;
     right: 0;
     height: 90px;
+    background-color: #ff6600; /* Orange background */
+    color: #fff; /* White text */
     z-index: 100;
 }
 
-.admin-dashboard-logout{
+.admin-dashboard-logout {
     margin-right: 10px;
     z-index: 999;
 }
 
-#admin-dashboard-logout{
+#admin-dashboard-logout {
     background: transparent;
-    color: rgba(3,4,94,1);
+    color: #fff; /* White text */
     font-size: 20px;
+    border: none;
 }
 
 #admin-dashboard-logout:hover {
     border-color: transparent;
+    color: #ff4500; /* Darker orange on hover */
 }
 
-.admin-dashboard-logout-icon{
+.admin-dashboard-logout-icon {
     margin-right: 10px;
+    color: #fff; /* White icon color */
 }
 
-.admin-dashboard-record{
+.admin-dashboard-record {
     display: flex;
     flex-direction: row;
     margin-left: 3vw;
@@ -46,12 +51,11 @@
 
 .admin-dashboard-users,
 .admin-dashboard-vehicle,
-.admin-dashboard-orders{
+.admin-dashboard-orders {
     height: 30vh;
     width: 30vw;
-    background-color: rgba(2, 62, 138, 0.49);
+    background-color: #f0f0f0; /* Light gray background */
     border-radius: 40px;
-
     padding: 3vw;
     display: flex;
     flex-direction: column;
@@ -60,10 +64,11 @@
 .admin-dashboard-users h2,
 .admin-dashboard-vehicle h2,
 .admin-dashboard-orders h2 {
-    font-size: 6vw;
+    font-size: 2rem; /* Adjusted font size */
+    color: #333; /* Dark gray text color */
 }
 
-.admin-dashboard-buttons{
+.admin-dashboard-buttons {
     display: flex;
     flex-direction: row;
     margin-left: 3vw;
@@ -72,19 +77,19 @@
 
 .admin-dashboard-users-button,
 .admin-dashboard-vehicle-button,
-.admin-dashboard-orders-button{
+.admin-dashboard-orders-button {
     height: 30vh;
     width: 30vw;
-    background-color: rgba(2, 62, 138, 0.49);
+    background-color: #f0f0f0; /* Light gray background */
     border-radius: 40px;
-
     padding: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.admin-dashboard-button-icon{
-    font-size: 6vw;
+.admin-dashboard-button-icon {
+    font-size: 2rem; /* Adjusted font size */
     padding: 1vw;
+    color: #ff6600; /* Orange icon color */
 }

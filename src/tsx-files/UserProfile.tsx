@@ -121,7 +121,7 @@ function UserProfile() {
         <>
             <div className="user-header">
                 <div className="user-homepage-title-container">
-                    <Link to="/homepage"><img id = "user-homepage-icon" src = "/YatraTech.png" alt="YatraTech Icon"/></Link>
+                    <Link to="/homepage"><img id = "user-homepage-icon" src = "/RentMyRide.png" alt="YatraTech Icon"/></Link>
                     <Link to="/homepage"><h2 id = "user-homepage-title"><span className="user-yatra">Yatra</span><span className="user-tech">Tech</span></h2></Link>
                 </div>
                 <div className="user-homepage-profile-icon-container">

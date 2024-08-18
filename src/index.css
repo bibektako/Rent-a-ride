@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87); /* Default text color */
+  background-color: #242424; /* Dark background */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +15,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ff6600; /* Orange text */
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #cc5200; /* Darker Orange on hover */
 }
 
 body {
@@ -28,11 +28,14 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #ffffff; /* White background for body */
+  color: #152039; /* Dark Gray text */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #ff6600; /* Orange text */
 }
 
 button {
@@ -42,12 +45,15 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f1f1f1; /* Light Gray background */
+  color: #152039; /* Dark Gray text */
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #ff6600; /* Orange border on hover */
+  background-color: #ff6600; /* Orange background on hover */
+  color: #ffffff; /* White text on hover */
 }
 button:focus,
 button:focus-visible {
@@ -56,13 +62,14 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #152039; /* Dark Gray text for light mode */
+    background-color: #ffffff; /* White background for light mode */
   }
   a:hover {
-    color: #747bff;
+    color: #ff6600; /* Orange text on hover in light mode */
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light Gray background for buttons in light mode */
+    color: #152039; /* Dark Gray text for buttons in light mode */
   }
 }

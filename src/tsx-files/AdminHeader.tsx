@@ -21,7 +21,7 @@ const AdminHeader: React.FC = () => {
         <>
             <div className="admin-header">
                 <div className="adminheader-title-container">
-                    <img id = "adminheader-icon" src = "/YatraTech.png" alt="YatraTech Icon"/>
+                    <img id = "adminheader-icon" src = "/RentMyRide.png" alt="YatraTech Icon"/>
                     <h2 id = "adminheader-title"><span className="admin-yatra">Yatra</span><span className="admin-tech">Tech</span></h2>
                 </div>
             </div>

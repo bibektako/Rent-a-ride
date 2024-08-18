@@ -298,11 +298,11 @@ function AuthenticationForm () {
                 <div className="authenticate-panels-container">
                     <div className="auth-panel auth-left-panel">
                         <div className="auth-content">
-                            <h3>New here ?</h3>
+                            <h3>Join Us Today!</h3>
                             <p>
-                                Start your journey with us today! Explore our wide
-                                range of vehicles and find the perfect car for your
-                                next adventure.
+                                Discover a world of possibilities with our diverse selection of vehicles.
+                                Whether you're planning a road trip or need a reliable ride,
+                                start your journey with us now!
                             </p>
                             <div className="sign-up-button-container">
                                 <button className="authenticate-btn transparent" onClick={handleSignUpClick}>
@@ -317,10 +317,10 @@ function AuthenticationForm () {
                     </div>
                     <div className="auth-panel auth-right-panel">
                         <div className="auth-content">
-                            <h3>One of us ?</h3>
+                            <h3>Already a Member?</h3>
                             <p>
-                                Welcome back! Sign in to manage your bookings,
-                                access exclusive deals, and hit the road with ease.
+                                Welcome back! Log in to manage your reservations,
+                                unlock special offers, and get ready for your next adventure.
                             </p>
                             <div className="sign-up-button-container">
                                 <button className="authenticate-btn transparent" onClick={handleSignInClick}>

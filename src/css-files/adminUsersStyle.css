@@ -2,19 +2,26 @@
     position: absolute;
     top: 100px;
     width: 100vw;
-    background-color: white;
+    background-color: #fff; /* White background */
     padding-left: 120px;
 }
 
-.admin-user-details{
+.admin-user-details {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
 }
 
-.admin-user{
+.admin-user {
     width: 60vw;
     padding: 10px;
     margin-bottom: 30px;
-    border: 3px solid #ccc;
+    border: 3px solid #ddd; /* Light Gray border */
+    border-radius: 10px; /* Optional: rounded corners */
+    background-color: #f9f9f9; /* Very Light Gray background */
+}
+
+.admin-user:hover {
+    border-color: #ff6600; /* Orange border on hover */
+    background-color: #fff; /* White background on hover */
 }
